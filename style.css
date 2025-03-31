@@ -1,0 +1,390 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+
+    font-family: Arial,sans-serif;
+    line-height: 1.6;
+    /* background-color:#106EBE; */
+    /* color: white; */
+    padding:1vw 1vh;
+}
+.navbar{
+    /* width: 80%; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color:#0FFCBE ; */
+}
+.logodp{
+    width: 20vh;
+}
+#changeColorBtn{
+    background-color: #FF0000;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+    box-shadow: 5px 5px 10px 2px rgba(203, 112, 112, 0.8);
+}
+#changeColorBtn:hover{
+    background-color: white;
+    color: #FF0000;    
+}
+.cartIcon{
+    margin-right: 1rem;
+    position: relative;
+}
+.cartIcon i{
+    font-size: 30px;
+}
+.cartIcon sup{
+    position: absolute;
+    background-color: #178582;
+    font-weight: bold;
+    padding: 1rem .5rem;
+    font-family: "Poppins";
+    border-radius: 50%;                          
+    top: -25%;
+    right: -23%;
+}
+.Myimage{
+    width:250px;
+    height: 250px;
+}
+.renderCartData{
+    /* height: 100vh; */
+    width: 20%;
+    /* background-color:#0FFCBE; */
+    /* margin-top: -12.5rem; */
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+    border-radius: 30px;
+}
+.cartImgElement{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    cursor:pointer;
+    position: relative;
+    margin-left: 7vw;
+}
+
+.main-container{
+    display: flex; 
+    justify-content: space-between;
+}
+.renderData{
+    display: flex;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+}
+.box-main{
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    border-radius: 10%;
+    height: 320px;
+}
+.box-main img{
+    width: 200px;
+    height: 200px;
+    padding-top: 3rem;
+}
+.productTitle{
+    font-size:14px;
+    margin-top: .3rem;
+    font-size: 15px;
+    font-style: oblique;
+    font-weight: 500;
+}
+.price-element{
+    font-size: 13px;
+    margin-top: .2rem;
+    font-weight: 900;
+
+}
+.btn-element{
+    padding: .4rem 8rem;
+    margin-top: .5rem;
+    cursor: pointer;
+    border: none;
+    border: 2px solid #111;
+    align-items: center;
+    background-color: #fee6e3;
+    box-sizing: border-box;
+    color: #111;
+    border-radius: 8px;
+    font-family: Inter,sans-serif;
+    font-weight: 800;
+}
+.cart-styling{
+    /* margin-top: 5px; */
+    padding-left: 40px;
+    padding-top: 20px;
+    flex-direction: column;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 600;
+    
+}
+.ri-delete-bin-line{
+    font-size: 25px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.Tcontainer{
+    display: none;
+    /* display: flex; */
+    justify-content: space-between;
+    margin-top:1rem ;
+    margin-left: 1rem;
+}
+#totalPrice{
+    font-size: 20px;
+    font-weight: 800;
+}
+.Tcontainer button{
+    background-color: #FF0000;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 12px;
+    box-shadow: 5px 5px 10px 2px rgba(203, 112, 112, 0.8);
+    margin-bottom: .5rem;
+    margin-top: .5rem;
+}
+.Tcontainer button:hover{
+    background-color: white;
+    color: #FF0000;    
+}
+.Tcontainer h1{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+/* Responsive design */
+
+@media only screen and (max-width: 768px) {
+    body{
+        font-size: 16px;
+    }
+    .logodp{
+        width: 15vh;
+    }
+    #changeColorBtn{
+        padding: 1rem 1rem;
+        font-size: 10px;
+    }
+    .cartIcon i{
+        font-size: 25px;
+    }
+    .cartIcon sup{
+        padding: .5rem .5rem;
+        border-radius: 50%;                          
+        top: -18%;
+    }
+    .Myimage{
+        width:100px;
+        height: 100px;
+    }
+    .renderCartData{
+        width: 30%; 
+    }
+    .cartImgElement{
+        width: 100px;
+        height: 100px;
+        margin: 10px;  
+    }
+    .box-main{
+        width: 350px;
+        height: 250px;
+    }
+    .box-main img{
+        width: 150px;
+        height: 150px;
+    }
+    .price-element{
+        font-size: 10px;
+    }
+    .btn-element{
+        padding: .2rem 5rem;
+        font-weight: 700;
+    }
+    .ri-delete-bin-line{
+        font-size: 20px;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+    .Tcontainer{
+        margin-top:1rem ;
+        margin-left: 1rem;
+    }
+    #totalPrice{
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .Tcontainer button{
+        padding: .5rem 1rem;
+        font-weight: 600;
+    }
+    .Tcontainer button:hover{
+        background-color: white;
+        color: #FF0000;    
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .navbar{
+        width: 90%;
+    }    
+    .logodp{
+        width: 10vh;
+    }
+    #changeColorBtn{
+        padding: .2rem .2rem;
+        font-size: 7px;
+    }
+    .cartIcon i{
+        font-size: 15px;
+    }
+    .cartIcon sup{
+        padding: .4rem .2rem;
+    }
+    .Myimage{
+        width:100px;
+        height: 100px;
+    }
+    .renderCartData{
+        margin-top: 10px;
+        width: 100%;
+        box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    
+        border-radius: 30px;
+    }
+    
+    .main-container{
+        display: flex; 
+        flex-direction: column;
+    }
+    .renderData{
+        display: flex;
+        margin-bottom: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+    .box-main{
+        /* box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px; */
+        width: 250px;
+        height: 200px;
+    }
+    .box-main img{
+        width: 100px;
+        height: 100px;
+        padding-top: 3rem;
+    }
+    .productTitle{
+        font-size:14px;
+        margin-top: .3rem;
+        font-size: 10px;
+        font-style: oblique;
+        font-weight: 600;
+        
+    }
+    .price-element{
+        font-size: 13px;
+        margin-top: .2rem;
+        font-weight: 900;
+    
+    }
+    .btn-element{
+        padding: .1rem 3rem;
+        margin-top: .5rem;
+        cursor: pointer;
+        border: none;
+        border: 2px solid #111;
+        align-items: center;
+        background-color: #fee6e3;
+        box-sizing: border-box;
+        color: #111;
+        border-radius: 8px;
+        font-family: Inter,sans-serif;
+        font-weight: 800;
+    }
+    .cart-styling{
+        /* margin-top: 5px; */
+        padding-left: 40px;
+        padding-top: 20px;
+        flex-direction: column;
+        display: flex;
+        /* align-items: center; */
+        justify-content: center;
+        font-size: 20px;
+        font-weight: 600;
+        
+    }
+    .ri-delete-bin-line{
+        font-size: 25px;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+    .Tcontainer{
+        display: none;
+        /* display: flex; */
+        justify-content: space-between;
+        margin-top:1rem ;
+        margin-left: 1rem;
+    }
+    #totalPrice{
+        font-size: 20px;
+        font-weight: 800;
+    }
+    .Tcontainer button{
+        background-color: #FF0000;
+        color: white;
+        padding: 1rem 2rem;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 12px;
+        box-shadow: 5px 5px 10px 2px rgba(203, 112, 112, 0.8);
+        margin-bottom: .5rem;
+        margin-top: .5rem;
+    }
+    .Tcontainer button:hover{
+        background-color: white;
+        color: #FF0000;    
+    }
+    .Tcontainer h1{
+        font-size: 25px;
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+    body{
+
+        font-family: Arial,sans-serif;
+        line-height: 1.6;
+        /* background-color:#106EBE; */
+        /* color: white; */
+        padding:.5vw .5vh;
+    }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart List</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-{#0A1828}">
+    <navbar-container>
+        <div class="navbar">
+            <div class="logo">
+                <!-- <h1>Shopping🛒 List📃</h1> -->
+                <img class="logodp" src="picturelogo-removebg-preview.png" alt="">
+            </div>
+            <div class="bgcolorchange">
+                <button id="changeColorBtn">Change Bg</button>
+            </div>
+            <div class="cartIcon">
+                <i div="cart-icon" class="ri-shopping-cart-2-line"></i>
+                <sup class="dynamic-count">0</sup>
+            </div>
+        </div>
+</navbar-container>
+    <h1 class="text-3xl font-bold">Shopping Cart</h1>
+    <div class="main-container ">
+        <div class="renderData ">
+            
+        </div>
+        <div class="renderCartData h-15vh bg-[#178582]  ">
+           <div class="Tcontainer">
+            <h1>Shopping🛒 List📃</h1>
+            <hr>
+            <p id="totalPrice"></p>
+            <a href="./checkout.html">
+                <button>CheckOut</button>
+            </a>   
+
+           </div>
+        </div>
+    </div>
+
+
+     <script src="script.js"></script>
+</body>
+</html>
